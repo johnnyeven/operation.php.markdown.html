@@ -3,6 +3,6 @@
 .left {float:left;position: relative;}
 .right {float:right;position: relative;}
 
-    .left .editor-button-group {position:absolute;top:10px;width:200px;height:30px;background-color:#B0B0B0;}
+    .left .editor-button-group {position:absolute;z-index:1000;top:10px;width:200px;height:30px;background-color:#B0B0B0;}
     .left .editor-panel {position:absolute;}
         #editor-textarea {position: absolute;top:0;left:0;right:0;bottom:0;}

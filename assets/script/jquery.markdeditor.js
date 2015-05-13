@@ -49,7 +49,7 @@
 			}
 
 			editor = ace.edit(settings.aceContainer);
-			editor.setTheme("ace/theme/xcode");
+			editor.setTheme("ace/theme/tomorrow_night_eighties");
 			editor.session.setMode("ace/mode/markdown");
 			editor.session.setUseWrapMode(true);
 		}
