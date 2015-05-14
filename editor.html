@@ -6,9 +6,12 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="assets/css/common.css" rel="stylesheet">
     <link href="assets/css/editor.css" rel="stylesheet">
+    <link href="assets/script/prettify/prettify.css" rel="stylesheet">
     
 	<script type="text/javascript" src="assets/script/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/script/ace/build/src-min-noconflict/ace.js"></script>
+    <script type="text/javascript" src="assets/script/markdown.min.js"></script>
+    <script type="text/javascript" src="assets/script/prettify/prettify.js"></script>
 	<script type="text/javascript" src="assets/script/jquery.markdeditor.js"></script>
     <script type="text/javascript" src="assets/script/common.js"></script>
 </head>
@@ -40,8 +43,7 @@
 $account = Account::get(array(
 'username'  =>  'operation'
 ));
-$account->email = 'admin@operationphp.com';
-
+$account->email = 'admin@operationphp.com';a
 if($account->save())
 {
 //if success do something...
@@ -78,7 +80,11 @@ php command app yourCommand
         </div>
     </div>
 	<div id="preview-container" class="right">
-    
+        <div id="preview-panel" class="editor-panel">
+            <div id="preview-content" class="preview-content">
+
+            </div>
+        </div>
     </div>
     <div class="clear"></div>
 

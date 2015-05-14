@@ -1,8 +1,10 @@
 .header {height:50px;background:#404040;}
 .container {width:100%;}
-.left {float:left;position: relative;}
-.right {float:right;position: relative;}
+.left {float:left;position: relative;width:50%;}
+.right {float:right;position: relative;width:50%;}
 
-    .left .editor-button-group {position:absolute;z-index:1000;top:10px;width:200px;height:30px;background-color:#B0B0B0;}
+    .left .editor-button-group {position:absolute;z-index:1000;top:10px;width:200px;height:30px;background-color:#B0B0B0;display:none;}
     .left .editor-panel {position:absolute;}
         #editor-textarea {position: absolute;top:0;left:0;right:0;bottom:0;}
+
+    .right .editor-panel {position: absolute;top:0;left:0;right:0;bottom:0;overflow-y: scroll;}
