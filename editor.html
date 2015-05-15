@@ -24,51 +24,13 @@
 
 	<div id="editor-container" class="left">
         <div id="editor-panel" class="editor-panel">
-            <div id="editor-textarea" style="font-size: 14px;line-height: 27px;font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;">
-# Operation.PHP Framework 用户手册
+            <div id="editor-textarea" style="font-size: 16px;line-height: 27px;font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;">```php
+$this = '123';
+```
 
-标签： operation.php 用户手册
-
----
-##1.什么是Operation.PHP
-[Operation.PHP](https://github.com/johnnyeven/operation.php) 是一个基于PHP的轻型框架。请大家不要把他看作是一个大型框架，我开发这个框架的目的就是希望把繁琐的操作简化，并且不希望引入太多的累赘功能。
-
-所以，我把扩展性作为首要考虑的功能之一。[Operation.PHP](https://github.com/johnnyeven/operation.php) 吸收了CodeIgniter框架的有点，适合敏捷开发，同时又改造了CodeIgniter框架中路由的功能，让框架更灵活自由。
-##2.Operation.PHP能做什么
-- [Operation.PHP](https://github.com/johnnyeven/operation.php) 中支持多App公用一套系统内核，配置非常方便，不同的App可以有自己独立的配置。
-- 你的项目需要支持多语言吗？没问题，在[Operation.PHP](https://github.com/johnnyeven/operation.php) 中这仅仅是一个配置的问题，剩下的就是创建你的多语言文件了。
-- [Operation.PHP](https://github.com/johnnyeven/operation.php) 还封装了Model层，你可以用更自然舒适的代码操作数据模型，就像这样：
 ```php
-//class Account extends Model
-$account = Account::get(array(
-'username'  =>  'operation'
-));
-$account->email = 'admin@operationphp.com';a
-if($account->save())
-{
-//if success do something...
-}
-```
-- 通过Connection组件，你可以很方便的在不同App之间相互调用，即使你App部署在不同的服务器。
-- 你可以使用Redis等NoSQL数据库充当你的缓存或者是Session管理工具，你甚至可以开发自己的驱动器取代Redis。
-- 通过Validation组件，你可以把你的参数验证过程简化为配置文件，以后你再也不需要冗长的if else语句来做参数判断了。
-- 你可以使用一下命令执行程序，当然你可以定制你自己的命令脚本。
-```bash
-php command app yourCommand
-```
-- 你可以为你每一个App定义一个ErrorHandler类来处理抛出的异常。
-- 简单的扩展方式，所有用户自定义的扩展都在App下的Extend目录下，有Helpers、Hooks、Library，分别是扩展函数、钩子、组件。
-
-##3.基本信息
-
-- [服务器需求](https://www.zybuluo.com/johnnyeven/note/97593)
-- [许可协议](https://www.zybuluo.com/johnnyeven/note/97601)
-- [变更记录](https://www.zybuluo.com/johnnyeven/note/97608)
-- [关于Operation.PHP](https://www.zybuluo.com/johnnyeven/note/97616)
-- [代码规范](https://www.zybuluo.com/johnnyeven/note/97951)
-
-##4.安装
-            </div>
+asdfasdf
+```</div>
         </div>
         <div id="editor-button-group" class="editor-button-group">
             <ul>

@@ -59,19 +59,20 @@
 				var time = new Date().getTime();
 				if(editorChanged && time > lastModify + 1000) {
 					var md = editor.getValue();
+					var tmp = [];
 					var lang = [];
 					var i = 0;
 					md = md.replace(/```([a-zA-Z]+)?\n/g, function(str, p) {
-						lang.push(p);
+						tmp.push(p);
 						if(i % 2 > 0) {
 							return "```\n";
 						}
 						++i;
 						return '```';
 					});
-					for(var i in lang) {
-						if(i % 2 > 0) {
-							lang.splice(i, 1);
+					for(var i in tmp) {
+						if(i % 2 == 0) {
+							lang.push(tmp[i]);
 						}
 					}
 					var html = markdown.toHTML(md);
@@ -96,11 +97,13 @@
 			}
 
 			editor = ace.edit(settings.aceContainer);
+			editor.setShowPrintMargin(false);
 			editor.setTheme("ace/theme/tomorrow_night_eighties");
 			editor.session.setMode("ace/mode/markdown");
 			editor.session.setUseWrapMode(true);
 
 			editor.session.on("change", function(e) {
+				console.log(e);
 				lastModify = new Date().getTime();
 				editorChanged = true;
 			});
