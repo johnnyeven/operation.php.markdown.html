@@ -65,6 +65,7 @@
 					md = md.replace(/```([a-zA-Z]+)?\n/g, function(str, p) {
 						tmp.push(p);
 						if(i % 2 > 0) {
+							++i;
 							return "```\n";
 						}
 						++i;
