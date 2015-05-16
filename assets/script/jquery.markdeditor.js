@@ -23,7 +23,6 @@
 			};
 			settings = $.extend({}, defaultSetting, settings);
 
-			var text;
 			var editor;
 			var editorChanged = true;
 			var lastModify = 0;
@@ -55,7 +54,7 @@
 				settings.groupButtonContainer.css("left", (width >> 1) - settings.groupButtonContainer.width());
 			};
 
-			setInterval(function() {
+			var updatePreview = function() {
 				var time = new Date().getTime();
 				if(editorChanged && time > lastModify + 1000) {
 					var md = editor.getValue();
@@ -90,7 +89,9 @@
 					prettyPrint();
 					editorChanged = false;
 				}
-			}, 100);
+			};
+
+			setInterval(updatePreview, 100);
 
 			if(settings.autoSize) {
 				window.onresize = autoSize;
