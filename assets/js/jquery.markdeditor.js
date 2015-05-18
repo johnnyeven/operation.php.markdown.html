@@ -26,6 +26,7 @@
 			var editor;
 			var editorChanged = true;
 			var lastModify = 0;
+			var changed = [];
 
 			if(typeof settings.headerContainer == "string") {
 				settings.headerContainer = $(settings.headerContainer);
@@ -88,6 +89,8 @@
 					settings.previewContentContainer.html(html);
 					prettyPrint();
 					editorChanged = false;
+
+					changed.length = 0;
 				}
 			};
 
@@ -105,7 +108,7 @@
 			editor.session.setUseWrapMode(true);
 
 			editor.session.on("change", function(e) {
-				console.log(e);
+				changed.push(e);
 				lastModify = new Date().getTime();
 				editorChanged = true;
 			});
