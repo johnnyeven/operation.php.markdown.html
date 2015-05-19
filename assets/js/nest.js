@@ -1,5 +1,9 @@
 $(function() {
+    var inAction = false;
+    var index = 0;
+    var maxCount = $("#slider > div.nest-step").length;
     var windowHeight = $(window).height();
+
     var resize = function() {
         var innerHeight = 0;
         windowHeight = $(window).height();
@@ -8,16 +12,20 @@ $(function() {
             innerHeight += windowHeight;
         });
         $("#slider").height(innerHeight);
+        $("#slider").css({
+            top: -index * windowHeight
+        });
     };
-
-    var index = 0;
-    var maxCount = $("#slider > div.nest-step").length;
     var switchTo = function(index) {
+        inAction = true;
         $("#slider").animate({
             top: -index * windowHeight
         }, {
             duration: 1000,
-            easing: "easeInOutExpo"
+            easing: "easeInOutExpo",
+            complete: function() {
+                inAction = false;
+            }
         });
     };
     var slideUp = function() {
@@ -31,13 +39,15 @@ $(function() {
         }
     };
     $(document).mousewheel(function(evt, detail) {
-        if(detail < 0)
-        {
-            slideUp();
-        }
-        else
-        {
-            slideDown();
+        if(!inAction) {
+            if(detail < 0)
+            {
+                slideUp();
+            }
+            else
+            {
+                slideDown();
+            }
         }
     });
 
