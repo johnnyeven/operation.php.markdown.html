@@ -9,6 +9,10 @@ a:hover {
     color: #fff;
 }
 
+ul {
+    list-style: none;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -23,6 +27,7 @@ a:hover {
     height: 100%; /* For at least Firefox */
     min-height: 100%;
 }
+
 .nest-container {
     margin-right: auto;
     margin-left: auto;
@@ -33,7 +38,6 @@ a:hover {
     padding: 30px;
 }
 
-
 /*
  * Header
  */
@@ -43,31 +47,35 @@ a:hover {
 }
 
 .masthead-brand small {
-    margin-left:10px;
-    color:#AAA;
+    margin-left: 10px;
+    color: #AAA;
 }
 
 .masthead-nav > li {
     display: inline-block;
 }
+
 .masthead-nav > li + li {
     margin-left: 20px;
 }
+
 .masthead-nav > li > a {
     padding-right: 0;
     padding-left: 0;
     font-size: 12px;
     font-weight: normal;
     color: #fff; /* IE8 proofing */
-    color: rgba(255,255,255,.75);
+    color: rgba(255, 255, 255, .75);
     border-bottom: 2px solid transparent;
 }
+
 .masthead-nav > li > a:hover,
 .masthead-nav > li > a:focus {
     background-color: transparent;
     border-bottom-color: #a9a9a9;
-    border-bottom-color: rgba(255,255,255,.25);
+    border-bottom-color: rgba(255, 255, 255, .25);
 }
+
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
@@ -77,30 +85,30 @@ a:hover {
 
 .nest-content {
     position: absolute;
-    top:0;
-    bottom:0;
+    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     overflow: hidden;
 }
 
 .nest-content .nest-slider {
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
 }
 
 .nest-content .nest-step {
     display: table;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     min-width: 100%;
 }
 
 .with-shadow {
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    box-shadow: inset 0 0 150px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, .5);
 }
 
 .nest-content .nest-step .nest-step-container {
@@ -109,17 +117,105 @@ a:hover {
     overflow: hidden;
 }
 
-.step2 .nest-step-left {
+.step-separate .nest-step-left {
     display: none;
 }
 
-.step2 .nest-step-right {
-    width:100%;
+.step-separate .nest-step-right {
+    width: 100%;
 }
 
 h1.nest-title-head {
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 30px;
+}
+
+.slider-action {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 5
+}
+
+.dot-stroke, .slider-action ul li a span.dot {
+    position: absolute;
+    opacity: .6;
+    width: 6px;
+    height: 6px;
+    background: #6c6c6c;
+    font-size: 13px;
+    border-radius: 50%;
+    top: 9px;
+    right: 1px;
+    border: #6c6c6c solid 0
+}
+
+.slider-action ul li {
+    position: relative;
+    padding: 15px 0;
+    height: 10px;
+    cursor: pointer;
+    width: 10px
+}
+
+.slider-action ul li a span.slider-action-text {
+    position: absolute;
+    text-align: right;
+    width: 150px;
+    right: 9px;
+    padding-right: 6px;
+    color: #6c6c6c;
+    font-size: 12px;
+    top: 3px;
+    opacity: 0
+}
+
+.slider-action ul li:hover a span.slider-action-text {
+    opacity: 1
+}
+
+.slider-action ul li:hover span.dot {
+    opacity: 1;
+    border: #6c6c6c solid 0
+}
+
+.slider-action ul li.active span.dot, .slider-action ul li:active span.dot {
+    background: 0 0
+}
+
+.slider-action ul li .dot-stroke {
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    top: 7px;
+    right: -1px;
+    border: #6c6c6c solid 2px;
+    background: 0 0;
+    -webkit-transform: scale(.5)
+}
+
+.slider-action ul li.active span.dot-stroke, .slider-action ul li:active span.dot-stroke {
+    display: block;
+    -webkit-transform: scale(1);
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.dot-stroke, .slider-action ul li .dot-stroke, .slider-action ul li a span.dot, .slider-action ul li:hover span.dot {
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.slider-action ul li, .slider-action ul li a span.slider-action-text {
+    -webkit-transition: all .1s ease-out;
+    -moz-transition: all .1s ease-out;
+    -o-transition: all .1s ease-out;
+    transition: all .1s ease-out
 }
 
 /*
@@ -128,9 +224,8 @@ h1.nest-title-head {
 
 .mastfoot {
     color: #999; /* IE8 proofing */
-    color: rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, .5);
 }
-
 
 /*
  * Affix and center
@@ -140,18 +235,22 @@ h1.nest-title-head {
     .masthead-brand {
         float: left;
     }
+
     .masthead-nav {
         float: right;
     }
+
     /* Pull out the header and footer */
     .masthead {
         position: fixed;
         top: 0;
     }
+
     .mastfoot {
         position: fixed;
         bottom: 0;
     }
+
     /* Handle the widths */
     .masthead,
     .mastfoot,
@@ -159,20 +258,31 @@ h1.nest-title-head {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
     }
 
-    .nest-content .nest-step .step2 {
-        width:800px;
-        margin-left:auto;
-        margin-right:auto;
+    .nest-content .nest-step .step-separate {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .step2 .nest-step-left {
-        float:left;
-        width:50%;
+    .step-separate .nest-step-left {
+        display: block;
+        float: left;
+        width: 350px;
     }
 
-    .step2 .nest-step-right {
-        float:right;
-        width:50%;
+    .step-separate .nest-step-left .nest-step-img-container {
+        position: relative;
+        overflow: hidden;
+        text-align: left;
+    }
+
+    .step-separate .nest-step-left .nest-step-img-container img {
+        position: absolute;
+    }
+
+    .step-separate .nest-step-right {
+        float: right;
+        width: 400px;
     }
 }
 

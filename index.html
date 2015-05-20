@@ -16,7 +16,7 @@
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="display: none;">
 <div class="container-fluid site-wrapper">
     <div class="nest-container">
         <div class="masthead">
@@ -35,11 +35,40 @@
 
         </div>
         <div class="nest-content with-shadow">
+            <div id="slider-action" class="slider-action">
+                <ul>
+                    <li class="active">
+                        <a>
+                            <span class="dot"></span>
+                            <span class="dot-stroke"></span>
+                            <span class="slider-action-text">人群</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="dot"></span>
+                            <span class="dot-stroke"></span>
+                            <span class="slider-action-text">目标</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <span class="dot"></span>
+                            <span class="dot-stroke"></span>
+                            <span class="slider-action-text">发现</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div id="slider" class="nest-slider">
                 <div class="nest-step">
                     <div class="nest-step-container">
-                        <div class="step2 clearfix">
-                            <div class="nest-step-left"></div>
+                        <div class="step-separate clearfix">
+                            <div class="nest-step-left">
+                                <div class="nest-step-img-container" style="height: 128px;">
+                                    <img src="assets/images/people.png" />
+                                </div>
+                            </div>
                             <div class="nest-step-right">
                                 <h1 class="nest-title-head">人群</h1>
                                 <p class="lead">这是一个面向有志于IT领域又有想法的年轻人的地方</p>
@@ -49,8 +78,12 @@
                 </div>
                 <div class="nest-step">
                     <div class="nest-step-container">
-                        <div class="step2 clearfix">
-                            <div class="nest-step-left"></div>
+                        <div class="step-separate clearfix">
+                            <div class="nest-step-left">
+                                <div class="nest-step-img-container" style="height: 155px;">
+                                    <img src="assets/images/target.png" />
+                                </div>
+                            </div>
                             <div class="nest-step-right">
                                 <h1 class="nest-title-head">目的</h1>
                                 <p class="lead">把你所学到的知识运用在项目生产环境中</p>
