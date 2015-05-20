@@ -175,6 +175,9 @@ $(function() {
                 playAnimation();
             }
         });
+
+        $("#slider-action > ul > li").removeClass("active");
+        $("#slider-action > ul > li").eq(index).addClass("active");
     };
     var slideUp = function() {
         if(index < maxCount - 1) {
@@ -199,6 +202,11 @@ $(function() {
                 slideDown();
             }
         }
+    });
+    $("#slider-action > ul > li > a").click(function() {
+        lastIndex = index;
+        index = $("#slider-action > ul > li > a").index($(this));
+        switchTo(index);
     });
 
     resize();
