@@ -1,0 +1,32 @@
+
+.masthead {
+    position: inherit;
+    z-index: 1000;
+    top: 0;
+    width:100%;
+    text-align: center;
+}
+
+.mastfoot {
+    position: inherit;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+}
+
+.panel-content {
+    text-align: left;
+}
+
+.panel-content .panel-title {
+    line-height:34px;
+}
+
+.list-group .readmore {
+    text-align: center;
+}
+
+.list-group .readmore a, .list-group .readmore a:visited {
+    color: #6bc0e8;
+    text-shadow: none;
+}

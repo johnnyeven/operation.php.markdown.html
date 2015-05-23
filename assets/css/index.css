@@ -21,68 +21,6 @@ ul {
     text-shadow: none; /* Prevent inheritence from `body` */
 }
 
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-    width: 100%;
-    height: 100%; /* For at least Firefox */
-    min-height: 100%;
-}
-
-.nest-container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Padding for spacing */
-.inner {
-    padding: 30px;
-}
-
-/*
- * Header
- */
-.masthead-brand {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.masthead-brand small {
-    margin-left: 10px;
-    color: #AAA;
-}
-
-.masthead-nav > li {
-    display: inline-block;
-}
-
-.masthead-nav > li + li {
-    margin-left: 20px;
-}
-
-.masthead-nav > li > a {
-    padding-right: 0;
-    padding-left: 0;
-    font-size: 12px;
-    font-weight: normal;
-    color: #fff; /* IE8 proofing */
-    color: rgba(255, 255, 255, .75);
-    border-bottom: 2px solid transparent;
-}
-
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-    background-color: transparent;
-    border-bottom-color: #a9a9a9;
-    border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-    color: #fff;
-    border-bottom-color: #fff;
-}
-
 .nest-content {
     position: absolute;
     top: 0;
@@ -104,11 +42,6 @@ ul {
     width: 100%;
     height: 100%;
     min-width: 100%;
-}
-
-.with-shadow {
-    -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 150px rgba(0, 0, 0, .5);
 }
 
 .nest-content .nest-step .nest-step-container {
@@ -232,32 +165,6 @@ h1.nest-title-head {
  */
 
 @media (min-width: 768px) {
-    .masthead-brand {
-        float: left;
-    }
-
-    .masthead-nav {
-        float: right;
-    }
-
-    /* Pull out the header and footer */
-    .masthead {
-        position: fixed;
-        top: 0;
-    }
-
-    .mastfoot {
-        position: fixed;
-        bottom: 0;
-    }
-
-    /* Handle the widths */
-    .masthead,
-    .mastfoot,
-    .nest-container {
-        width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    }
-
     .nest-content .nest-step .step-separate {
         width: 800px;
         margin-left: auto;
@@ -283,13 +190,5 @@ h1.nest-title-head {
     .step-separate .nest-step-right {
         float: right;
         width: 400px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .masthead,
-    .mastfoot,
-    .nest-container {
-        width: 1280px;
     }
 }
