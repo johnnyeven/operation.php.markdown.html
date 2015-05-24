@@ -26,7 +26,12 @@
     text-align: center;
 }
 
+.list-group-item a, .list-group-item a:visited {
+    color: #c2c2c2;
+    font-weight:bold;
+}
+
 .list-group .readmore a, .list-group .readmore a:visited {
-    color: #6bc0e8;
+    color: #c2c2c2;
     text-shadow: none;
 }
