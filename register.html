@@ -36,12 +36,43 @@
             <div class="register-container">
                 <div class="register-panel">
                     <form>
-                        <div class="form-group">
-                            <label for="iptHighschool">大学</label>
-                            <input type="text" class="form-control" id="iptHighschool" name="iptHighschool">
+                        <div class="form-step" id="step1">
+                            <h3>学校</h3>
+                            <div class="form-group">
+                                <label for="iptHighschool">大学</label>
+                                <input type="text" class="form-control" id="iptHighschool" name="iptHighschool">
+                            </div>
+                            <div class="form-group">
+                                <label for="iptProfession">专业</label>
+                                <input type="text" class="form-control" id="iptProfession" name="iptProfession">
+                            </div>
+                            <div class="form-group">
+                                <label for="iptName">真实姓名</label>
+                                <input type="text" class="form-control" id="iptName" name="iptName">
+                            </div>
+                            <div class="form-group clearfix">
+                                <button id="btnNext" type="button" class="btn btn-success pull-right ">下一步</button>
+                            </div>
                         </div>
-                        <div class="form-group clearfix">
-                            <button type="button" class="btn btn-success pull-right ">下一步</button>
+                        <div class="form-step" id="step2" style="display: none;">
+                            <h3>基本信息</h3>
+                            <div class="alert alert-success" role="alert"><strong>注册成功</strong> 正在跳转...</div>
+                            <div class="form-group">
+                                <label for="iptUsername">用户名</label>
+                                <input type="text" class="form-control" id="iptUsername" name="iptUsername">
+                            </div>
+                            <div class="form-group">
+                                <label for="iptPassword">密码</label>
+                                <input type="text" class="form-control" id="iptPassword" name="iptPassword">
+                            </div>
+                            <div class="form-group">
+                                <label for="iptPasswordConfirm">确认密码</label>
+                                <input type="text" class="form-control" id="iptPasswordConfirm" name="iptPasswordConfirm">
+                            </div>
+                            <div class="form-group clearfix">
+                                <button id="btnPrev" type="button" class="btn btn-success pull-left ">上一步</button>
+                                <button id="btnSubmit" type="button" class="btn btn-success pull-right ">完成注册</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -59,3 +90,5 @@
 </body>
 </html>
 <script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/register.js"></script>
