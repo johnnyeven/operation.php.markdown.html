@@ -1,0 +1,35 @@
+.create-project-content {
+    text-align: left;
+    display: table;
+    width:100%;
+    height:100%;
+    min-height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.create-project-content .create-project-container {
+    display: table-cell;
+    width:100%;
+    height:100%;
+    min-height: 100%;
+    vertical-align: middle;
+}
+
+.create-project-panel {
+    padding:10px 30px 10px 30px;
+    background:rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .create-project-content {
+        width: 600px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .create-project-content {
+        width: 800px;
+    }
+}
