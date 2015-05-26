@@ -20,6 +20,11 @@ h5,h6{font-size:16px}
 .theme-black {color:#CCCCCC;background:#2D2D2D;}
 .theme-black .preview-panel a, .theme-black .preview-panel a:visited {color:#99CC99;text-decoration:none;}
 
+.spaceholder {
+    height:51px;
+    margin-bottom: 50px;
+}
+
 .with-shadow {
     -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 150px rgba(0, 0, 0, .5);
@@ -36,15 +41,6 @@ h5,h6{font-size:16px}
     min-height: 100%;
     margin-right: auto;
     margin-left: auto;
-}
-
-/* Pull out the header and footer */
-.masthead {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    width:100%;
-    text-align: center;
 }
 
 .mastfoot {
@@ -114,7 +110,6 @@ h5,h6{font-size:16px}
     }
 
     /* Handle the widths */
-    .masthead,
     .mastfoot,
     .nest-container {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
@@ -122,7 +117,6 @@ h5,h6{font-size:16px}
 }
 
 @media (min-width: 1280px) {
-    .masthead,
     .mastfoot,
     .nest-container {
         width: 1280px;

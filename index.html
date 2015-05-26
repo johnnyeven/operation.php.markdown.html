@@ -19,20 +19,36 @@
 <body style="display: none;">
 <div class="container-fluid site-wrapper">
     <div class="nest-container">
-        <div class="masthead">
-            <div class="inner">
-                <h1 class="masthead-brand">发现<small>用思想创造价值</small></h1>
-                <nav>
-                    <ul class="nav masthead-nav">
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h1 class="navbar-brand">发现 <small>用思想创造价值</small></h1>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索">
+                        </div>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="#">首页</a></li>
                         <li><a href="#">协作平台</a></li>
-                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">关于我们</a></li>
                     </ul>
-                </nav>
-            </div>
-        </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
         <div class="nest-process">
-
         </div>
         <div class="nest-content with-shadow">
             <div id="slider-action" class="slider-action">

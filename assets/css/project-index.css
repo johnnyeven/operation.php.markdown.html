@@ -1,0 +1,11 @@
+
+.mastfoot {
+    position: inherit;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+}
+
+.project-content {
+    text-align: left;
+}
