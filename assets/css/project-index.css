@@ -9,3 +9,11 @@
 .project-content {
     text-align: left;
 }
+
+.project-title {
+    margin-bottom: 20px;
+}
+
+.project-title h1 {
+    margin:0;
+}

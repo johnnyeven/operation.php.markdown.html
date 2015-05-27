@@ -1561,7 +1561,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f5f5f5;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 4px;
 }
 pre code {
@@ -3913,7 +3913,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   height: 1px;
   margin: 9px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #444;
 }
 .nav > li > a > img {
   max-width: none;
@@ -4847,7 +4847,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #a8a8a8;
+  color: #222;
   background-color: #fff;
 }
 .list-group-item > .badge {
