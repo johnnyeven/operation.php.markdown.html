@@ -17,3 +17,8 @@
 .project-title h1 {
     margin:0;
 }
+
+.panel-default .panel-heading .badge {
+    color: #aaa;
+    background-color: #222;
+}

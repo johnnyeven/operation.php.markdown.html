@@ -1,0 +1,33 @@
+
+.mastfoot {
+    position: inherit;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+}
+
+.project-content {
+    text-align: left;
+}
+
+.project-title {
+    margin-bottom: 20px;
+}
+
+.project-title h1 {
+    margin:0;
+}
+
+.panel-default .panel-heading .badge {
+    color: #aaa;
+    background-color: #222;
+}
+
+.table-footer {
+    padding:10px;
+    border-top:1px solid #222;
+}
+
+.table-footer .pagination {
+    margin:0;
+}

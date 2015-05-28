@@ -1,0 +1,19 @@
+
+.mastfoot {
+    position: inherit;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+}
+
+.project-content {
+    text-align: left;
+}
+
+.project-title {
+    margin-bottom: 20px;
+}
+
+.project-title h1 {
+    margin:0;
+}
