@@ -344,6 +344,8 @@ module.exports = function (grunt) {
     'concat:dist', 'concat:dist.full',
     'sass:dev'
   ]);
+  grunt.registerTask('compile-css-dev', 'sass:dev');
+  grunt.registerTask('compile-css', 'sass:dist');
   grunt.registerTask('minify', ['uglify', 'sass:dist']);
   grunt.registerTask('test', ['connect:tests', 'qunit', 'jshint']);
 
